@@ -1,13 +1,12 @@
-import { View, Text } from 'react-native'
-import React from 'react'
-import AppHeader from './components/AppHeader'
-import { SafeAreaProvider } from 'react-native-safe-area-context'
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import StackNavigator from './StackNavigator';
 
 const App = () => {
   return (
-      <SafeAreaProvider>
-        <AppHeader/>
-      </SafeAreaProvider>
+    <NavigationContainer>
+      <StackNavigator />
+    </NavigationContainer>
   )
 }
 
